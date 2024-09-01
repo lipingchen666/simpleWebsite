@@ -10,6 +10,6 @@ button.addEventListener('click', function() {
     const contactFormTemplateH = Handlebars.compile(contactFormTemplate.innerHTML);
     // execute the compiled template and print the output to the console
     console.log(contactFormTemplateH);
-    personalInfoWrapper.innerHTML = contactFormTemplateH();
+    personalInfoWrapper.innerHTML = contactFormTemplateH({ firstName: 'Liping' });
     console.log('Button clicked!');
 });
